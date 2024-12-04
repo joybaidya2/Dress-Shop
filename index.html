@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Product Shop!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--navbar section -->
+    <nav class="sticky top-0 bg-white shadow z-50">
+        <div class="flex justify-between items-center px-6 py-4">
+            <div>
+                <img class="h-[50px]" src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-png-download-0.png" alt="Logo">
+            </div>
+            <button id="menu-toggle" class="lg:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <ul id="nav-links" class="hidden lg:flex space-x-8 font-bold items-center">
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#">Home</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#Shop">Shop</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#Blog">Blog</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#About">About</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <img class="h-7" src="https://images.vexels.com/media/users/3/200094/isolated/preview/cffc2ddcf5d4aa62ce9120d90cc2c48a-shopping-bag-icon-stroke-pink.png" alt="Cart">
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-white lg:hidden font-bold">
+            <li class="hover:text-emerald-600 hover:underline">
+                <a href="#">Home</a>
+            </li>
+            <li class="hover:text-emerald-600 hover:underline">
+                <a href="#Shop">Shop</a>
+            </li>
+            <li class="hover:text-emerald-600 hover:underline">
+                <a href="#Blog">Blog</a>
+            </li>
+            <li class="hover:text-emerald-600 hover:underline">
+                <a href="#About">About</a>
+            </li>
+            <li class="hover:text-emerald-600 hover:underline">
+                <a href="#Contact">Contact</a>
+            </li>
+            <li>
+                <img class="h-7" src="https://images.vexels.com/media/users/3/200094/isolated/preview/cffc2ddcf5d4aa62ce9120d90cc2c48a-shopping-bag-icon-stroke-pink.png" alt="Cart">
+            </li>
+        </ul>
+    </nav>
+    <!--main section-->
+    <main class="flex flex-col-reverse lg:flex-row bg-emerald-50">
+        <div class="pl-6 lg:pl-24 pt-8 lg:pt-44 text-center lg:text-left">
+            <h1 class="font-bold text-xl">Trade-in-offer</h1>
+            <p class="font-bold text-3xl sm:text-4xl lg:text-6xl pt-2 pb-2 font-serif">Super value deals</p>
+            <p class="text-emerald-600 font-bold text-3xl sm:text-4xl lg:text-6xl pb-6 italic">On all products</p>
+            <p class="text-slate-500 pb-8 text-base sm:text-lg">Save more with coupons & up to 70% off!</p>
+            <button class="bg-orange-200 text-emerald-600 px-8 py-3 rounded-tl-[60px] rounded-br-[60px] font-bold ml-0 sm:ml-6 lg:ml-12">
+                Shop Now
+            </button>
+        </div>
+        <div class="flex justify-center lg:justify-end">
+            <img class="h-[300px] w-auto sm:h-[400px] lg:h-[540px] lg:w-[600px] ml-0 lg:ml-24 mt-4 lg:mt-16" 
+                src="https://png.pngtree.com/png-clipart/20240103/original/pngtree-beautiful-girl-wear-white-tee-for-t-shirt-mockup-png-image_14008172.png" 
+                alt="Product Image">
+        </div>
+    </main>
+    
+    <div id="Blog">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://png.pngtree.com/png-clipart/20220927/original/pngtree-male-hand-typing-on-mobile-phone-png-image_8634079.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-red-100 px-4 py-2 rounded">Free Shipping</button>
+                </div>
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://www.transparentpng.com/thumb/time/alarm-clock-time-png-transparent-images--7.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-green-200 px-4 py-2 rounded">Online Order</button>
+                </div>
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://static.vecteezy.com/system/resources/previews/036/585/024/non_2x/a-3d-save-money-on-a-transparent-background-free-png.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-green-100 px-4 py-2 rounded">Save Money</button>
+                </div>
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://png.pngtree.com/png-vector/20240427/ourmid/pngtree-boy-wake-up-from-bedtime-png-image_12338740.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-gray-200 px-4 py-2 rounded">Promotions</button>
+                </div>
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://png.pngtree.com/png-clipart/20221226/original/pngtree-boys-and-girls-do-new-year-shopping-png-image_8809250.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-red-100 px-4 py-2 rounded">Happy Sell</button>
+                </div>
+                <div class="border bg-white text-center p-4 shadow-xl">
+                    <img class="h-28 mx-auto pt-4 pb-4" src="https://png.pngtree.com/png-vector/20240706/ourmid/pngtree-iilustaration-of-boy-using-laptop-png-image_13000277.png" alt="">
+                    <button class="text-emerald-600 font-medium bg-orange-100 px-4 py-2 rounded">24/7 Support</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="Shop">
+        <section>
+            <div class="mt-24">
+                <h1 class="font-bold text-5xl text-center pb-4">Featured Products</h1>
+                <p class="text-center text-slate-500 text-lg font-medium mb-16">Summer Collection New Modern Design</p>
+            </div>
+            
+            <!-- Products Section -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Product Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Product Card 1 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://static.vecteezy.com/system/resources/previews/046/828/524/non_2x/female-black-t-shirt-isolated-on-transparent-background-free-png.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 2 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://i.pinimg.com/originals/05/58/51/055851c8bf4d541e60509b950616f903.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 3 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://static.vecteezy.com/system/resources/thumbnails/045/057/486/small_2x/cheerful-boy-with-hands-in-jeans-pockets-standing-against-a-transparent-backdrop-png.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 4 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://static.vecteezy.com/system/resources/previews/036/271/966/non_2x/ai-generated-id-photo-of-man-in-white-shirt-on-transparent-background-free-png.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Row of Products -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pt-8">
+                    <!-- Product Card 5 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://pngimg.com/d/dress_shirt_PNG8060.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 6 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://www.pngall.com/wp-content/uploads/5/Shirt-PNG-Image-File.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 7 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://www.pngall.com/wp-content/uploads/2016/04/Dress-Shirt-PNG-File.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Product Card 8 -->
+                    <div class="w-full items-center border rounded-2xl p-4">
+                        <div class="p-4">
+                            <img class="bg-orange-50 rounded-xl w-full" src="https://png.pngtree.com/png-vector/20240805/ourmid/pngtree-classic-white-linen-shirt-for-men-perfect-casual-summer-days-png-image_13386809.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-slate-500">adidas</p>
+                            <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                            <p class="text-amber-400">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="flex justify-between items-center mt-4">
+                                <p class="font-bold text-xl text-emerald-700">$78</p>
+                                <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="bg-[url(https://images6.alphacoders.com/942/942155.jpg)] h-[300px] bg-no-repeat bg-cover object-cover bg-center mt-20">
+        <div class="text-white text-center pt-20 px-4 sm:px-6 md:px-8">
+            <p class="font-semibold text-lg pb-2">Repair Services</p>
+            <h1 class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif">
+                Up to <b class="text-red-500">70% off</b>-All t-Shirts & Accessories
+            </h1>
+            <button class="bg-white text-black pr-4 pl-4 pt-2 pb-2 font-semibold mt-6 rounded-lg hover:bg-emerald-400 hover:text-white">
+                Explore More
+            </button>
+        </div>
+    </section>
+    
+    <div id="About">
+        <section>
+            <div class="text-center mt-16">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold italic pb-4">New Arrivals</h1>
+                <p class="text-sm sm:text-md text-slate-500 pb-8">Summer Collection New Modern Design</p>
+            </div>
+            <div class="flex flex-wrap max-w-7xl mx-auto justify-between pt-8 gap-6">
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-clipart/20220424/original/pngtree-formal-mens-light-blue-shirt-free-png-and-psd-png-image_7556083.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-clipart/20211024/original/pngtree-formal-mens-shirt-and-pant-free-png-psd-png-image_6863799.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-clipart/20220509/original/pngtree-formal-mens-white-check-shirt-black-pant-png-psd-png-image_7667313.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-clipart/20220718/ourmid/pngtree-formal-mens-check-shirt-with-black-pant-free-png-and-psd-png-image_6005526.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap max-w-7xl mx-auto justify-between pt-8 gap-6">
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-vector/20240807/ourmid/pngtree-football-jersey-mockup-abstract-geometric-pattern-sport-t-shirt-design-png-image_13121743.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://weinkthat.com/wp-content/uploads/2023/06/Ethereal-Pigments-WomenFront.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-3d-colorful-gradient-t-shirt-design-png-image_13310481.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-[280px] md:w-[280px] items-center border rounded-2xl">
+                    <div class="p-4 ">
+                        <img class="bg-orange-50 rounded-xl" src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-white-dress-shirt-short-sleeve-in-the-style-of-vray-tracing-png-image_12785174.png" alt="">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500">adidas</p>
+                        <h1 class="text-md font-semibold">Cartoon Astronaut T-Shirts</h1>
+                        <p class="text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                        <div class="flex space-x-10 sm:space-x-16 md:space-x-44">
+                            <p class="font-bold text-xl text-emerald-700">
+                                $78
+                            </p>
+                            <p><i class="fa-solid fa-cart-shopping text-emerald-600 bg-emerald-100 p-3 rounded-full"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="mt-20 max-w-7xl mx-auto">
+        <div class="flex flex-wrap gap-10 justify-between">
+            <!-- First Block -->
+            <div class="w-full sm:w-[620px] h-[420px] bg-orange-400 rounded-tr-[120px] rounded-bl-[120px]">
+                <div class="flex flex-col sm:flex-row">
+                    <div class="mt-20 sm:mt-28 pl-10 sm:pl-14">
+                        <p class="text-white text-xl pb-3">crazy deals</p>
+                        <h1 class="text-white font-bold text-3xl pb-3">Buy 1 get 1 free</h1>
+                        <p class="font-medium text-white pb-6">The best classic dress is on sale at cora</p>
+                        <button class="border-2 border-white pt-2 pb-2 pr-4 pl-4 font-medium text-white">Learn More</button>
+                    </div>
+                    <div class="mt-8 sm:mt-0">
+                        <img class="h-[380px] w-[300px] sm:pt-12" src="https://static.vecteezy.com/system/resources/previews/044/857/679/non_2x/confident-woman-dressed-orange-sweater-pointing-finger-empty-space-on-isolated-transparent-background-free-png.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Second Block -->
+            <div class="w-full sm:w-[620px] h-[420px] bg-[url(https://blog.printsome.com/wp-content/uploads/keagan-henman-625488-unsplash-724x483.jpg)] bg-cover bg-center rounded-bl-[120px] rounded-tr-[120px]">
+                <div class="mt-32 pl-10 sm:pl-14 text-white space-y-3">
+                    <p class="text-xl">spring/summer</p>
+                    <h1 class="font-bold text-3xl">upcoming season</h1>
+                    <p class="font-medium">The best classic dress is on sale at cara.</p>
+                    <button class="bg-emerald-600 font-medium pt-2 pb-2 pr-4 pl-4">Collection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Image section start.-->
+    
+    <section class="flex flex-wrap gap-6 max-w-8xl mx-auto justify-between mt-12">
+        <div class="w-full sm:w-[400px] lg:w-[400px] h-[260px] bg-[url(https://www.rupaonlinestore.com/media/catalog/product/cache/d781db1e41dca13993ce85832d0e70b7/b/w/bw-4002_amvin9blvtqcydhl.jpg)] bg-no-repeat bg-cover border shadow-xl">
+            <h1 class="pt-28 pl-4 font-bold text-3xl text-white">SEASONAL SALE</h1>
+            <p class="font-bold text-lg text-red-600 pl-4 pt-4">Winter Collection - 50% OFF</p>
+        </div>
+
+        <div class="w-full sm:w-[460px] lg:w-[460px] h-[260px] bg-[url(https://img.drz.lazcdn.com/static/pk/p/6388d34c3b8df206759f496509770da2.jpg_720x720q80.jpg)] bg-no-repeat bg-center bg-cover border shadow-xl">
+            <h1 class="pt-28 pl-4 pb-4 text-3xl font-bold text-white">NEW FOOTWEAR COLLECTION</h1>
+            <p class="text-red-600 font-bold text-xl pl-4">Spring/Summer 2024</p>
+        </div>
+
+        <div class="w-full sm:w-[400px] lg:w-[400px] h-[260px] bg-[url(https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/a/2/y/xl-model-st-herry-fashion-original-imagua4fzwcyhnyz.jpeg?q=90&crop=false)] bg-no-repeat bg-cover bg-center border shadow-xl">
+            <h1 class="pt-28 pl-4 pb-4 text-3xl font-bold text-white">T-SHIRTS</h1>
+            <p class="text-red-600 font-bold text-xl pl-4">New Trendy Prints</p>
+        </div>
+    </section>
+    
+    <section class="h-[160px] bg-[url(https://www.techinsights.com/sites/default/files/2024-02/custom-services.png)] bg-no-repeat bg-center bg-cover mt-28 flex flex-wrap justify-between px-6 md:px-24">
+        <div class="pt-10 md:pt-16 text-white w-full md:w-[60%]">
+            <h1 class="text-3xl font-bold pb-3">Sign Up For Newsletters</h1>
+            <p class="font-medium text-md">Get E-mail updates about our latest shop and <b class="text-amber-400">special offers</b></p>
+        </div>
+        <div class="pt-10 md:pt-16 w-full md:w-[35%] flex justify-between">
+            <input class="h-12 w-full md:w-96 pl-4 font-semibold rounded-l-md mb-4 md:mb-0" type="text" placeholder="Your email address">
+            <button class="text-white bg-emerald-500 font-semibold h-12 pr-6 pl-6 rounded-r-md w-full md:w-auto">Sign Up</button>
+        </div>
+    </section>
+    
+    <div id="Contact">
+        <footer class="flex flex-wrap mt-24 max-w-6xl mx-auto justify-between px-6 sm:px-12">
+            <!-- Contact Section -->
+            <div class="space-y-1 pt-4 w-full sm:w-[30%]">
+                <h1 class="font-bold text-xl pb-4">Contact</h1>
+                <p><b>Address:</b> Jamuna Future Park, Dhaka</p>
+                <p><b>Phone:</b> +01781785236/+01865267895</p>
+                <p><b>House:</b> Gulshan2, Norda</p>
+            </div>
+    
+            <!-- About Section -->
+            <div class="w-full sm:w-[30%] pt-4">
+                <h1 class="font-bold text-xl pb-4">About</h1>
+                <ul class="space-y-1 font-medium">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- My Account Section -->
+            <div class="w-full sm:w-[30%] pt-4">
+                <h1 class="font-bold text-xl pb-4">My Account</h1>
+                <ul class="space-y-1 font-medium">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>    
+    <script src="javaScript.js"></script>
+</body>
+</html>
